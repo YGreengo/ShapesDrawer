@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane fx:id="board" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#getStartMouse" onMouseReleased="#getMouseRelease" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shapesController">
+   <children>
+      <Button fx:id="lineButtom" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#makeLine" prefHeight="25.0" prefWidth="76.0" text="Line" />
+      <Button fx:id="rectangleButton" layoutX="199.0" layoutY="14.0" mnemonicParsing="false" onAction="#makeRectangle" prefHeight="25.0" prefWidth="76.0" text="Rectangle" />
+      <Button fx:id="circleButton" layoutX="106.0" layoutY="14.0" mnemonicParsing="false" onAction="#makeCircle" prefHeight="25.0" prefWidth="76.0" text="Circle" />
+      <Button fx:id="undoButton" layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#undo" prefHeight="25.0" prefWidth="76.0" text="Undo" />
+      <Button fx:id="clearButton" layoutX="199.0" layoutY="136.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="76.0" text="Clear" />
+      <Button fx:id="fillButton" layoutX="106.0" layoutY="136.0" mnemonicParsing="false" onAction="#fillShape" prefHeight="25.0" prefWidth="76.0" text="Fill" />
+      <Separator layoutX="320.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="-19.0" layoutY="192.0" prefHeight="17.0" prefWidth="342.0" />
+      <ChoiceBox fx:id="colorBox" layoutX="69.0" layoutY="75.0" prefWidth="150.0" />
+      <Text layoutX="23.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" />
+   </children>
+</Pane>
